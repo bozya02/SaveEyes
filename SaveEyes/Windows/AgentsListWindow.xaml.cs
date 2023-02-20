@@ -130,7 +130,7 @@ namespace SaveEyes.Windows
 
         private void btnNewAgent_Click(object sender, RoutedEventArgs e)
         {
-            new AgentWindow(new Agent()).ShowDialog();
+            new AgentWindow(new Agent(), true).ShowDialog();
         }
 
         private void Paginator(object sender, MouseButtonEventArgs e)

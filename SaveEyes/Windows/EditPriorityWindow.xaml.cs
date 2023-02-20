@@ -28,7 +28,7 @@ namespace SaveEyes.Windows
 
             Agents = agents;
 
-            tbPriority.Text = (Agents.Sum(x => x.Priority) / Agents.Count()).ToString();
+            tbPriority.Text = Agents.Max(x => x.Priority).ToString();
 
             this.DataContext = this;
         }
